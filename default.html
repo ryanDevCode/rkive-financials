@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      href="{{ asset('assets/images/logo/logo1.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ asset('assets/images/logo/logo1.png') }}"
+      type="image/x-icon"
+    />
+    <title>RKIVE</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h6,
+    li {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: text-decoration 0.3s ease;
+      float: right;
+      font-size: 2em;
+    }
+
+    /* a:hover {
+        text-decoration: underline;
+    } */
+
+    .login {
+      text-decoration: none;
+      color: inherit;
+      transition: text-decoration 0.3s ease;
+      float: right;
+      font-size: 2em;
+    }
+
+    .login:hover {
+      text-decoration: underline;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      background: rgb(156, 117, 255);
+      background: radial-gradient(
+        circle,
+        rgba(156, 117, 255, 1) 45%,
+        rgba(212, 174, 237, 1) 100%
+      );
+      /* background-image: url('assets/svg/default2.svg');
+        background-attachment: fixed;
+        background-size: cover;
+        justify-content: center; */
+      /* background-image: url("data:image/<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2400 800" opacity="0.64"><defs><linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="sssurf-grad"><stop stop-color="hsla(265, 94%, 46%, 1.00)" stop-opacity="1" offset="0%"></stop><stop stop-color="hsla(265, 60%, 61%, 1.00)" stop-opacity="1" offset="100%"></stop></linearGradient></defs><g fill="url(#sssurf-grad)" transform="matrix(1,0,0,1,0,-300.9900207519531)"><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,87)" opacity="0.05"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,174)" opacity="0.21"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,261)" opacity="0.37"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,348)" opacity="0.53"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,435)" opacity="0.68"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,522)" opacity="0.84"></path><path d=" M 0 335.0667612226179 Q 800 450 800 305.98005725662387 Q 1600 450 1600 312.595749217091 Q 2400 450 2400 315.3491066641648 L 2400 800 L 0 800 L 0 322.05915192291843 Z" transform="matrix(1,0,0,1,0,609)" opacity="1.00"></path></g></svg>"); */
+    }
+
+    .card {
+      padding: 3em;
+      color: white;
+      width: 90%;
+      height: 30em;
+      margin: auto;
+      background-size: cover;
+      background-color: #000000;
+      background-color: #000000;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.99'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%230b004e' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23130055' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%231c005c' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23250163' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%232D086A' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    @media only screen and (max-width: 768px) {
+      .card {
+        width: 100%;
+        height: 100vh; /* Set height to 100% of the viewport height */
+        top: 0;
+        left: 0;
+        transform: none; /* Remove the translation */
+      }
+    }
+    .mini-card {
+      text-align: left;
+    }
+    .logo {
+      display: flex;
+      gap: 1em;
+      font-size: 1.5em;
+    }
+    .logo h1 {
+      margin-bottom: 10px;
+    }
+
+    .mini-card p {
+      text-align: left;
+      width: 50%;
+    }
+    .mini-card img {
+      height: 100px;
+      width: auto;
+    }
+    .mini-card2 {
+      text-align: center;
+    }
+
+    .mini-card3 {
+      color: black;
+      text-align: center;
+      margin: auto;
+      transition: text-decoration 0.3s ease;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .scroll-container {
+      white-space: nowrap;
+      /* Prevents text from wrapping */
+      overflow: hidden;
+      /* Hides overflowing content */
+    }
+
+    .scroll {
+      display: inline-block;
+      /* Ensures content flows horizontally */
+      animation: scrollText 30s linear infinite;
+      /* Animation properties */
+    }
+
+    @keyframes scrollText {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .scroller {
+      margin-top: 4em;
+    }
+    .container {
+      height: 300px;
+      width: 200px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      margin: 10px; /* Add some spacing between containers */
+      padding: 2em;
+      color: #000000;
+    }
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container h3 {
+      margin-top: 10px;
+      max-width: 100%;
+    }
+    .wrapper {
+      display: flex;
+      gap: 3em;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%; /* Set width to 100% on smaller screens */
+        max-width: 300px; /* Set maximum width */
+      }
+    }
+    @media screen and (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+    .box {
+      width: 190px;
+      height: 254px;
+      background: rgb(103, 225, 255);
+      transition: all 0.4s;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .box:hover {
+      border-radius: 15px;
+      cursor: pointer;
+      transform: scale(1.2);
+      box-shadow: 0px 0px 10px 5px rgba(222, 218, 218, 0.705);
+      background: rgb(103, 151, 255);
+    }
+
+    .first-content {
+      height: 100%;
+      width: 100%;
+      transition: all 0.4s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      border-radius: 15px;
+    }
+
+    .box:hover .first-content {
+      height: 0px;
+      opacity: 0;
+    }
+
+    .second-content {
+      height: 0%;
+      width: 100%;
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      transition: all 0.4s;
+      font-size: 0px;
+      transform: rotate(90deg) scale(-1);
+    }
+
+    .box:hover .second-content {
+      opacity: 1;
+      height: 100%;
+      font-size: 1.8rem;
+      transform: rotate(0deg);
+    }
+  </style>
+
+  <body>
+    <div class="card scroll-container">
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://fbs.rkiveadmin.com/finance-admin/auth/login"
+              class="login"
+              ><span style="font-size: 1em">Login</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <div class="mini-card">
+          <div class="logo">
+            <img src="./images/logo1.png" alt="" />
+            <h1>RKIVE</h1>
+          </div>
+          <div class="box">
+            <div class="first-content">
+              <span>First</span>
+            </div>
+            <div class="second-content">
+              <span>Second</span>
+            </div>
+          </div>
+          <!-- <div class="wrapper">
+            <div class="container">
+              <img src="./images/financial.png" alt="" />
+              <h3>Financial and Budget Management (Admin)</h3>
+            </div>
+            <div class="container">
+              <img src="./images/destination.png" alt="" />
+              <h3>Travel Budget Request Portal</h3>
+            </div>
+          </div> -->
+
+          <!-- <h2> Administrative Solutions</h2>
+                <p>Administrative Management System: Financial and Budget Management,</p>
+                <p>and Travel
+                    Management with Expense
+                    Monitoring</p> -->
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
